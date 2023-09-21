@@ -11,3 +11,7 @@ backend post and comment service
 # POST SERVICE
 /post(post,{title:string})
 /post{get}
+
+# COMMENTS SERVICE 
+/post/:id/comments{post,{content:string}}
+/post/:id/comment{get}
