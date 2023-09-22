@@ -17,3 +17,7 @@ backend post and comment service
 /post/:id/comments{post,{content:string}}
 
 /post/:id/comment{get}
+
+
+1 problem -many request
+solution 1,sync communcation 2, aysnc communcation (event Broker and add Query service)
