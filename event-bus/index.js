@@ -9,7 +9,7 @@ const app =express()
 app.use(bodyParser.json())
 
 
-app.post('/event',(req,res)=>{
+app.post('/events',(req,res)=>{
     const event=req.body
 
     axios.post('http://localhost:4000/events',event)
