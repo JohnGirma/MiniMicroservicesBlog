@@ -1,6 +1,8 @@
 'use client'
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
+import CommentCreate from './CommentCreate'
+import CommentList from './CommentList'
 
 
 function PostList() {
@@ -17,6 +19,8 @@ function PostList() {
     const renderPosts=Object.values(posts).map(post=>{
         return <div key={post.id}>
           <h3>{post.title}</h3>  
+          <CommentList postId={post.id}/>
+          <CommentCreate postId={post.id}/>
         </div>
     })
   return (
