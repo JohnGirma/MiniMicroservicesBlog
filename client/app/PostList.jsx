@@ -18,7 +18,7 @@ function PostList() {
     // console.log(post)
     const renderPosts=Object.values(posts).map(post=>{
         return <div key={post.id}>
-          <h3>{post.title}</h3>  
+          <h2>{post.title}</h2>  
           <CommentList comments={post.Comment}/>
           <CommentCreate postId={post.id}/>
         </div>
