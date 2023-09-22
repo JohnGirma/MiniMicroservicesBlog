@@ -1,10 +1,14 @@
 const express = require('express')
 const bodyParser =require('body-parser')
+const cors = require('cors')
 //generate a rondom no
 const {randomBytes}=require('crypto')
 
 const app =express()
 app.use(bodyParser.json())
+
+ 
+app.use(cors())
 
 //save the data in memory(object)
 const posts={}

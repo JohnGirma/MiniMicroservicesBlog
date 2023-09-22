@@ -2,6 +2,7 @@
 
 service
 1, Post -[Create Post, List all Posts]
+
 2, Comments -[Create a Comment ,List all Comments]
 
 setup 
@@ -14,4 +15,5 @@ backend post and comment service
 
 # COMMENTS SERVICE 
 /post/:id/comments{post,{content:string}}
+
 /post/:id/comment{get}
