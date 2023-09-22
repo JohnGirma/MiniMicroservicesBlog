@@ -28,7 +28,7 @@ app.post('/events',(req, res)=>{
     })
     comment.status=status
     comment.content=content
-    console.log(comment.status=status)
+    // console.log(comment.status=status)
 
 }
 if (type==='CommentCreatedEvent') {
@@ -37,7 +37,7 @@ if (type==='CommentCreatedEvent') {
         post.comments.push({id,content,status})
    
 }
-console.log(posts)
+// console.log(posts)
 res.send({})
 })
 app.listen(4002,()=>{
