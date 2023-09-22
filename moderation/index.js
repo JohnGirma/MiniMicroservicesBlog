@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.post('/events',async (req, res)=>{
     const {type,data}=req.body
     if (type==='CommentCreatedEvent') {
-      const status =data.content.include('no') ?'rejected' :'approved'
+      const status =data.content.includes('no') ?'rejected' :'approved'
       await axios.post('http://localhost:4005/events',{
         type:'CommentModerat',
         data:{

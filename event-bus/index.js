@@ -3,7 +3,7 @@ const bodyParser =require('body-parser')
 
 //generate a rondom no
 const {randomBytes}=require('crypto')
-const { default: axios } = require('axios')
+const  axios  = require('axios')
 
 const app =express()
 app.use(bodyParser.json())
