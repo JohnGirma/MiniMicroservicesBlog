@@ -21,12 +21,12 @@ app.post('/events',(req, res)=>{
         const{id,title}=data
         posts[id]={id,title,Comment:[]}
 }   if (type==='CommentCreatedEvent') {
-        const{id,content,postId}=data
+        const{id,content,postId,status}=data
         const post=posts[postId]
-        post.Comment.push({id,content})
+        post.Comment.push({id,content,status})
     
 }
-console.log(posts)
+// console.log(posts)
 res.send({})
 })
 app.listen(4002,()=>{
