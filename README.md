@@ -2,7 +2,7 @@
 
 A mini microservice blog project using 4 node js service nextjs frontend app
 
-
+![Blog](post.PNG)
 
 service
 1, Post -[Create Post, List all Posts]

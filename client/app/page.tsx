@@ -9,7 +9,8 @@ export default function Home() {
       </div>
       <hr />
       <div className="">
-     <h2>Posts</h2>
+     <h1 className='flex justify-center content-center items-center justify-self-center'>
+      Posts</h1>
      <PostList/>
       </div>
       </div>
