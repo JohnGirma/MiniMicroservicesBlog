@@ -17,14 +17,14 @@ function PostList() {
     },[])
     // console.log(post)
     const renderPosts=Object.values(posts).map(post=>{
-        return <div key={post.id}>
-          <h3>{post.title}</h3>  
-          <CommentList comments={post.Comment}/>
+        return <div className='card' key={post.id}>
+          <h2>{post.title}</h2>  
+          <CommentList comments={post.comments}/>
           <CommentCreate postId={post.id}/>
         </div>
     })
   return (
-    <div className='card flex justify-center content-center items-center justify-self-center my-8 flex-row gap-10'> 
+    <div className=' flex justify-center flex-wrap content-center items-center justify-self-center my-8 flex-row gap-5'> 
         {renderPosts}
     </div>
   )

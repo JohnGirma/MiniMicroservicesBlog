@@ -1,9 +1,21 @@
 # MiniMicroservicesBlog
 
+A mini microservice blog project using 4 node js service nextjs frontend app
+
+![Blog](post.PNG)
+
 service
 1, Post -[Create Post, List all Posts]
 
 2, Comments -[Create a Comment ,List all Comments]
+
+3,client
+
+4, event-bus
+
+5, moderation
+
+6, query
 
 setup 
 frontend React app
