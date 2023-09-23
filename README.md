@@ -33,3 +33,7 @@ backend post and comment service
 
 1 problem -many request
 solution 1,sync communcation 2, aysnc communcation (event Broker and add Query service)
+
+
+# Dockerizing 
+steps{ from,workdir,copy run, copy,CMD}
