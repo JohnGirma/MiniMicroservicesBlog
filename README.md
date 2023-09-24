@@ -71,3 +71,8 @@ type{cluster ip,node port, load balancer ,external Name}
 2, push the image to docker hub
 3, create a deployment for service
 4, create a cluster ip service for  services
+
+# update image
+1, build an image - docker build -t [] .
+2, push the image to docker hub -- docker push []
+3, runthe command 'kubectl rollout restart deployment[depl_name]'
