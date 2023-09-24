@@ -55,3 +55,19 @@ kubectl logs{pod_name}
 kubectl delete pod [pod_name] 
 kubectl describe pod [pod_name]
 kubectl apply -f[config file name]
+
+# create a kubernetes Deployments
+commands
+kubectl apply -f deployment.yml
+kubectl get deployment
+kubectl describe deployment [depl name]
+kubectl delete deployment [depl_name]
+
+# create a kubernetes service
+type{cluster ip,node port, load balancer ,external Name}
+
+# add new service
+1, build an image for the service
+2, push the image to docker hub
+3, create a deployment for service
+4, create a cluster ip service for  services
