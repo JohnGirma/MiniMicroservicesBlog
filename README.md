@@ -37,3 +37,21 @@ solution 1,sync communcation 2, aysnc communcation (event Broker and add Query s
 
 # Dockerizing 
 steps{ from,workdir,copy run, copy,CMD}
+commands
+docker build -t yohannes543/posts:0.0.1---build image
+docker run[image]----start a container
+docker run -it[image][cmd]----override
+docker ps----print out information
+docker exec -it[container id][cmd]    
+docker logs[container id]
+
+# kubernetes
+steps{kubernetes cluster,node,pod ,deployment ,service }
+commands
+kubectl apply -f posts.yaml
+kubectl get pods ----print out info
+kubectl exec -it[pod_name]
+kubectl logs{pod_name}
+kubectl delete pod [pod_name] 
+kubectl describe pod [pod_name]
+kubectl apply -f[config file name]
