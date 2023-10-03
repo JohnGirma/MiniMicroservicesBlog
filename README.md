@@ -76,3 +76,10 @@ type{cluster ip,node port, load balancer ,external Name}
 1, build an image - docker build -t [] .
 2, push the image to docker hub -- docker push []
 3, runthe command 'kubectl rollout restart deployment[depl_name]'
+
+
+# Skaffold
+
+it help us continuous development for container based & Kubernetes applicationsto 
+
+choco install -y skaffold
